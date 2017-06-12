@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FEBD3E51EEA8FCF008ED9D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBD3E41EEA8FCF008ED9D2 /* main.m */; };
+		3FEBD3E81EEA8FCF008ED9D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBD3E71EEA8FCF008ED9D2 /* AppDelegate.m */; };
+		3FEBD3EB1EEA8FCF008ED9D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBD3EA1EEA8FCF008ED9D2 /* ViewController.m */; };
+		3FEBD3EE1EEA8FCF008ED9D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEBD3EC1EEA8FCF008ED9D2 /* Main.storyboard */; };
+		3FEBD3F01EEA8FCF008ED9D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEBD3EF1EEA8FCF008ED9D2 /* Assets.xcassets */; };
+		3FEBD3F31EEA8FCF008ED9D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEBD3F11EEA8FCF008ED9D2 /* LaunchScreen.storyboard */; };
+		3FEBD3FE1EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBD3FD1EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.m */; };
+		3FEBD4091EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBD4081EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.m */; };
+		B5CFE47F63BAB872A614D949 /* libPods-IpsmapSDK_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEC1126CAB70202EF0D16A9 /* libPods-IpsmapSDK_Demo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FEBD3FA1EEA8FCF008ED9D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FEBD3D81EEA8FCF008ED9D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FEBD3DF1EEA8FCF008ED9D2;
+			remoteInfo = IpsmapSDK_Demo;
+		};
+		3FEBD4051EEA8FCF008ED9D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FEBD3D81EEA8FCF008ED9D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FEBD3DF1EEA8FCF008ED9D2;
+			remoteInfo = IpsmapSDK_Demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25F00BE4824CBD33B62ED2F1 /* Pods-IpsmapSDK_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpsmapSDK_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IpsmapSDK_Demo/Pods-IpsmapSDK_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		3FEBD3E01EEA8FCF008ED9D2 /* IpsmapSDK_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IpsmapSDK_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEBD3E41EEA8FCF008ED9D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FEBD3E61EEA8FCF008ED9D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3FEBD3E71EEA8FCF008ED9D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3FEBD3E91EEA8FCF008ED9D2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3FEBD3EA1EEA8FCF008ED9D2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3FEBD3ED1EEA8FCF008ED9D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FEBD3EF1EEA8FCF008ED9D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FEBD3F21EEA8FCF008ED9D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FEBD3F41EEA8FCF008ED9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FEBD3F91EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IpsmapSDK_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEBD3FD1EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IpsmapSDK_DemoTests.m; sourceTree = "<group>"; };
+		3FEBD3FF1EEA8FCF008ED9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FEBD4041EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IpsmapSDK_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEBD4081EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IpsmapSDK_DemoUITests.m; sourceTree = "<group>"; };
+		3FEBD40A1EEA8FCF008ED9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		691C6A2A00243E6485D167EC /* Pods-IpsmapSDK_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpsmapSDK_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-IpsmapSDK_Demo/Pods-IpsmapSDK_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		DBEC1126CAB70202EF0D16A9 /* libPods-IpsmapSDK_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IpsmapSDK_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FEBD3DD1EEA8FCF008ED9D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CFE47F63BAB872A614D949 /* libPods-IpsmapSDK_Demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEBD3F61EEA8FCF008ED9D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEBD4011EEA8FCF008ED9D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		055A46E56CB664E210FB1317 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBEC1126CAB70202EF0D16A9 /* libPods-IpsmapSDK_Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14A2F726E8B3704861E92DC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25F00BE4824CBD33B62ED2F1 /* Pods-IpsmapSDK_Demo.debug.xcconfig */,
+				691C6A2A00243E6485D167EC /* Pods-IpsmapSDK_Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3FEBD3D71EEA8FCF008ED9D2 = {
+			isa = PBXGroup;
+			children = (
+				3FEBD3E21EEA8FCF008ED9D2 /* IpsmapSDK_Demo */,
+				3FEBD3FC1EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests */,
+				3FEBD4071EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests */,
+				3FEBD3E11EEA8FCF008ED9D2 /* Products */,
+				14A2F726E8B3704861E92DC1 /* Pods */,
+				055A46E56CB664E210FB1317 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3FEBD3E11EEA8FCF008ED9D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FEBD3E01EEA8FCF008ED9D2 /* IpsmapSDK_Demo.app */,
+				3FEBD3F91EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.xctest */,
+				3FEBD4041EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FEBD3E21EEA8FCF008ED9D2 /* IpsmapSDK_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				3FEBD3E61EEA8FCF008ED9D2 /* AppDelegate.h */,
+				3FEBD3E71EEA8FCF008ED9D2 /* AppDelegate.m */,
+				3FEBD3E91EEA8FCF008ED9D2 /* ViewController.h */,
+				3FEBD3EA1EEA8FCF008ED9D2 /* ViewController.m */,
+				3FEBD3EC1EEA8FCF008ED9D2 /* Main.storyboard */,
+				3FEBD3EF1EEA8FCF008ED9D2 /* Assets.xcassets */,
+				3FEBD3F11EEA8FCF008ED9D2 /* LaunchScreen.storyboard */,
+				3FEBD3F41EEA8FCF008ED9D2 /* Info.plist */,
+				3FEBD3E31EEA8FCF008ED9D2 /* Supporting Files */,
+			);
+			path = IpsmapSDK_Demo;
+			sourceTree = "<group>";
+		};
+		3FEBD3E31EEA8FCF008ED9D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FEBD3E41EEA8FCF008ED9D2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FEBD3FC1EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FEBD3FD1EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.m */,
+				3FEBD3FF1EEA8FCF008ED9D2 /* Info.plist */,
+			);
+			path = IpsmapSDK_DemoTests;
+			sourceTree = "<group>";
+		};
+		3FEBD4071EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FEBD4081EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.m */,
+				3FEBD40A1EEA8FCF008ED9D2 /* Info.plist */,
+			);
+			path = IpsmapSDK_DemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FEBD3DF1EEA8FCF008ED9D2 /* IpsmapSDK_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FEBD40D1EEA8FCF008ED9D2 /* Build configuration list for PBXNativeTarget "IpsmapSDK_Demo" */;
+			buildPhases = (
+				CBC4C8733D1E2F687EDF6D78 /* [CP] Check Pods Manifest.lock */,
+				3FEBD3DC1EEA8FCF008ED9D2 /* Sources */,
+				3FEBD3DD1EEA8FCF008ED9D2 /* Frameworks */,
+				3FEBD3DE1EEA8FCF008ED9D2 /* Resources */,
+				D1506AF37CA22F1AEBE4A8EF /* [CP] Embed Pods Frameworks */,
+				A9A08B8419D8FAAAF8112C0C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IpsmapSDK_Demo;
+			productName = IpsmapSDK_Demo;
+			productReference = 3FEBD3E01EEA8FCF008ED9D2 /* IpsmapSDK_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FEBD3F81EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FEBD4101EEA8FCF008ED9D2 /* Build configuration list for PBXNativeTarget "IpsmapSDK_DemoTests" */;
+			buildPhases = (
+				3FEBD3F51EEA8FCF008ED9D2 /* Sources */,
+				3FEBD3F61EEA8FCF008ED9D2 /* Frameworks */,
+				3FEBD3F71EEA8FCF008ED9D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FEBD3FB1EEA8FCF008ED9D2 /* PBXTargetDependency */,
+			);
+			name = IpsmapSDK_DemoTests;
+			productName = IpsmapSDK_DemoTests;
+			productReference = 3FEBD3F91EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FEBD4031EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FEBD4131EEA8FCF008ED9D2 /* Build configuration list for PBXNativeTarget "IpsmapSDK_DemoUITests" */;
+			buildPhases = (
+				3FEBD4001EEA8FCF008ED9D2 /* Sources */,
+				3FEBD4011EEA8FCF008ED9D2 /* Frameworks */,
+				3FEBD4021EEA8FCF008ED9D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FEBD4061EEA8FCF008ED9D2 /* PBXTargetDependency */,
+			);
+			name = IpsmapSDK_DemoUITests;
+			productName = IpsmapSDK_DemoUITests;
+			productReference = 3FEBD4041EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FEBD3D81EEA8FCF008ED9D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = zhangty;
+				TargetAttributes = {
+					3FEBD3DF1EEA8FCF008ED9D2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G3KRMQC7T9;
+						ProvisioningStyle = Automatic;
+					};
+					3FEBD3F81EEA8FCF008ED9D2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G3KRMQC7T9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FEBD3DF1EEA8FCF008ED9D2;
+					};
+					3FEBD4031EEA8FCF008ED9D2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G3KRMQC7T9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FEBD3DF1EEA8FCF008ED9D2;
+					};
+				};
+			};
+			buildConfigurationList = 3FEBD3DB1EEA8FCF008ED9D2 /* Build configuration list for PBXProject "IpsmapSDK_Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FEBD3D71EEA8FCF008ED9D2;
+			productRefGroup = 3FEBD3E11EEA8FCF008ED9D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FEBD3DF1EEA8FCF008ED9D2 /* IpsmapSDK_Demo */,
+				3FEBD3F81EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests */,
+				3FEBD4031EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FEBD3DE1EEA8FCF008ED9D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEBD3F31EEA8FCF008ED9D2 /* LaunchScreen.storyboard in Resources */,
+				3FEBD3F01EEA8FCF008ED9D2 /* Assets.xcassets in Resources */,
+				3FEBD3EE1EEA8FCF008ED9D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEBD3F71EEA8FCF008ED9D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEBD4021EEA8FCF008ED9D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9A08B8419D8FAAAF8112C0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IpsmapSDK_Demo/Pods-IpsmapSDK_Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBC4C8733D1E2F687EDF6D78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1506AF37CA22F1AEBE4A8EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IpsmapSDK_Demo/Pods-IpsmapSDK_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FEBD3DC1EEA8FCF008ED9D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEBD3EB1EEA8FCF008ED9D2 /* ViewController.m in Sources */,
+				3FEBD3E81EEA8FCF008ED9D2 /* AppDelegate.m in Sources */,
+				3FEBD3E51EEA8FCF008ED9D2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEBD3F51EEA8FCF008ED9D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEBD3FE1EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEBD4001EEA8FCF008ED9D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEBD4091EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FEBD3FB1EEA8FCF008ED9D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FEBD3DF1EEA8FCF008ED9D2 /* IpsmapSDK_Demo */;
+			targetProxy = 3FEBD3FA1EEA8FCF008ED9D2 /* PBXContainerItemProxy */;
+		};
+		3FEBD4061EEA8FCF008ED9D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FEBD3DF1EEA8FCF008ED9D2 /* IpsmapSDK_Demo */;
+			targetProxy = 3FEBD4051EEA8FCF008ED9D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FEBD3EC1EEA8FCF008ED9D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FEBD3ED1EEA8FCF008ED9D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FEBD3F11EEA8FCF008ED9D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FEBD3F21EEA8FCF008ED9D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FEBD40B1EEA8FCF008ED9D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FEBD40C1EEA8FCF008ED9D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FEBD40E1EEA8FCF008ED9D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F00BE4824CBD33B62ED2F1 /* Pods-IpsmapSDK_Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				INFOPLIST_FILE = IpsmapSDK_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ipsmap.IpsmapSDK-Demo.IpsmapSDK-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3FEBD40F1EEA8FCF008ED9D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 691C6A2A00243E6485D167EC /* Pods-IpsmapSDK_Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				INFOPLIST_FILE = IpsmapSDK_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ipsmap.IpsmapSDK-Demo.IpsmapSDK-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3FEBD4111EEA8FCF008ED9D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				INFOPLIST_FILE = IpsmapSDK_DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ipsmap.IpsmapSDK-Demo.IpsmapSDK-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IpsmapSDK_Demo.app/IpsmapSDK_Demo";
+			};
+			name = Debug;
+		};
+		3FEBD4121EEA8FCF008ED9D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				INFOPLIST_FILE = IpsmapSDK_DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ipsmap.IpsmapSDK-Demo.IpsmapSDK-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IpsmapSDK_Demo.app/IpsmapSDK_Demo";
+			};
+			name = Release;
+		};
+		3FEBD4141EEA8FCF008ED9D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				INFOPLIST_FILE = IpsmapSDK_DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ipsmap.IpsmapSDK-Demo.IpsmapSDK-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IpsmapSDK_Demo;
+			};
+			name = Debug;
+		};
+		3FEBD4151EEA8FCF008ED9D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				INFOPLIST_FILE = IpsmapSDK_DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ipsmap.IpsmapSDK-Demo.IpsmapSDK-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IpsmapSDK_Demo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FEBD3DB1EEA8FCF008ED9D2 /* Build configuration list for PBXProject "IpsmapSDK_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEBD40B1EEA8FCF008ED9D2 /* Debug */,
+				3FEBD40C1EEA8FCF008ED9D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FEBD40D1EEA8FCF008ED9D2 /* Build configuration list for PBXNativeTarget "IpsmapSDK_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEBD40E1EEA8FCF008ED9D2 /* Debug */,
+				3FEBD40F1EEA8FCF008ED9D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FEBD4101EEA8FCF008ED9D2 /* Build configuration list for PBXNativeTarget "IpsmapSDK_DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEBD4111EEA8FCF008ED9D2 /* Debug */,
+				3FEBD4121EEA8FCF008ED9D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FEBD4131EEA8FCF008ED9D2 /* Build configuration list for PBXNativeTarget "IpsmapSDK_DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEBD4141EEA8FCF008ED9D2 /* Debug */,
+				3FEBD4151EEA8FCF008ED9D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FEBD3D81EEA8FCF008ED9D2 /* Project object */;
+}
