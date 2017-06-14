@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import <IpsmapSDK/IpsmapSDK.h>
+#import "ExampleListViewController.h"
+#import "APIKey.h"
 
 @interface AppDelegate ()
 
@@ -19,16 +21,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     //初始化Ipsmap
-    [IpsmapServices setAppKey:@"DhGZ6Av4Sz"];
+    [IpsmapServices setAppKey:(NSString *)APIKey];
     
-    //UI
-    IpsMapViewController *rootVC = [[IpsMapViewController alloc] initWithMapId:@"lGaWCUtqoj"];
-    //广妇儿
-    //IpsMapViewController *rootVC = [[IpsMapViewController alloc] initWithMapId:@"lGaWCUtqoj" targetName:@"成人中医(珠)" targetId:@"200191"];
+    ExampleListViewController *rootVC = [[ExampleListViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = rootVC;
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
     return YES;
