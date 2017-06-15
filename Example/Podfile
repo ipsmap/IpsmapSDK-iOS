@@ -2,9 +2,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, ‘8.0’
 
 target 'IpsmapSDK_Demo' do
-    #pod 'IpsmapSDK'
+    pod 'IpsmapSDK'
     #本地路径
-    pod 'IpsmapSDK', :path => '../'
+    #pod 'IpsmapSDK', :path => '../'
     #git路径
     #pod 'IpsmapSDK', :git => 'https://github.com/ipsmap/IpsmapSDK-iOS.git'
 end

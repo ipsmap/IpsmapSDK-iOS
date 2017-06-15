@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "IpsmapSDK"
-  s.version      = "1.0.11"
+  s.version      = "1.1.0"
   s.summary      = "室内导航SDK."
 
   # This description is used to generate tags and improve search results.
@@ -133,6 +133,11 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  # s.dependency "Bugly", "~> 2.4.7"
+  # s.dependency "Mixpanel", "~> 3.1.3"
+  # s.dependency "Parse", "~> 1.14.4"
+  # s.dependency "SDWebImage", "~> 3.8.2"
+  # s.dependency "SVProgressHUD", "~> 2.1.2"
+
 
 end
