@@ -3,7 +3,7 @@
 IpsmapSDK-iOS 是一套基于 iOS 8.0 及以上版本的室内地图应用程序开发接口，供开发者在自己的iOS应用中加入室内地图相关的功能，包括：地图显示（多楼层、多栋楼）、室内导航、模拟导航、语音播报等功能。
 
 ## 获取AppKey
-请给zhangtengying@ewell.cc邮件联系获取AppKey
+请给dev@ipsmap.com邮件联系获取AppKey
 
 ## 使用CocoaPods部署
 在Podfile中使用命令如下：
