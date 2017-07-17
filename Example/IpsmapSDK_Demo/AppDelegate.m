@@ -31,6 +31,10 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
+    //检测位置共享口令是否存在
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ipsReceiveShareInfo:) name:IpsReceiveShareInfoNotification object:nil];
+    [[IpsmapServices sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    
     return YES;
 }
 
@@ -49,6 +53,7 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    [[IpsmapServices sharedInstance] applicationWillEnterForeground:application];
 }
 
 
@@ -61,5 +66,17 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+- (void)ipsReceiveShareInfo:(NSNotification *)noti {
+    if (noti.object == nil || ![noti.object isKindOfClass:[UIView class]]) {
+        return;
+    }
+    
+    UIView *viewJoin = (UIView *)noti.object;
+    //有分享口令
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [viewJoin performSelector:@selector(showInView:) withObject:[UIApplication sharedApplication].keyWindow];
+    });
+}
 
 @end
