@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
+//剪贴板内有位置共享口令
+#define IpsReceiveShareInfoNotification     @"IpsNotificationReceiveShareInfo"
 
 @protocol IpsmapServicesDelegate <NSObject>
 
@@ -31,6 +34,13 @@
 + (nonnull instancetype)sharedInstance;
 
 + (void)setAppKey:(nonnull NSString *)appKey;
+
+- (void)application:(UIApplication *_Nonnull)application didFinishLaunchingWithOptions:(NSDictionary *_Nullable)launchOptions;
+
+- (void)applicationWillEnterForeground:(UIApplication *_Nonnull)application;
+
+//请求对应的医院列表
+- (void)requestPartnerHospitalList;
 
 - (NSInteger)hasPermissionWith:(nonnull NSString *)mapId;
 

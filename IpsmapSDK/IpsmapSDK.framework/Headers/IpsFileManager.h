@@ -32,12 +32,19 @@ extern NSString * const kAppCacheIFLyFile;
 //App的缓存信息 //Library/Caches/System/
 + (NSString*)GetAppCachesDirectory;
 
-//Library/Users/Uid
-+ (NSString*)GetUserDirectory:(NSString*)uid;
-
 //新手引导查看过（记录版本号）
 + (BOOL)setUserGuideClicked;
 //新手引导是否查看过
 + (BOOL)isUserGuideClicked;
+
+//位置分享群的昵称
++ (BOOL)setShareUserName:(NSString *)name;
++ (NSString *)getShareUserName;
+
+//加入的位置分享群列表
++ (BOOL)setJoinedGroupList:(NSDictionary *)dic;
++ (NSDictionary *)getJoinedGroupList;
+
+
 
 @end

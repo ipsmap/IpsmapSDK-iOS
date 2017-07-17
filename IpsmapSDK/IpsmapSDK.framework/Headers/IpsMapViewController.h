@@ -17,4 +17,6 @@
 
 - (nonnull instancetype)initWithMapId:(nonnull NSString *)mapId targetName:(nonnull NSString *)targetName targetId:(nonnull NSString *)targetId;
 
+- (void)setShareMapId:(NSString *_Nullable)mapId groupId:(NSString *_Nullable)groupId;
+
 @end

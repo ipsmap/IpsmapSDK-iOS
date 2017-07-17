@@ -13,6 +13,7 @@
 #import "IpsUserGuideViewController.h"
 #import "IpsNavigationController.h"
 #import "IpsFileManager.h"
+#import "IpsAlertView.h"
 
 #import "IpsmapLocationManger.h"
 #import "IpsLocation.h"
