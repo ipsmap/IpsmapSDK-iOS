@@ -62,3 +62,29 @@ $ pod install
     }
 }
 ```
+
+### 位置共享功能
+1、在 didFinishLaunchingWithOptions里面创建好window之后添加
+```objective-c
+    //检测位置共享口令是否存在
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ipsReceiveShareInfo:) name:IpsReceiveShareInfoNotification object:nil];
+    [[IpsmapServices sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+```
+2、在applicationWillEnterForeground里添加
+```objective-c
+ [[IpsmapServices sharedInstance] applicationWillEnterForeground:application];
+```
+3、通知响应处理
+```objective-c
+- (void)ipsReceiveShareInfo:(NSNotification *)noti {
+    if (noti.object == nil || ![noti.object isKindOfClass:[UIView class]]) {
+        return;
+    }
+    
+    UIView *viewJoin = (UIView *)noti.object;
+    //有分享口令
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [viewJoin performSelector:@selector(showInView:) withObject:[UIApplication sharedApplication].keyWindow];
+    });
+}
+```
