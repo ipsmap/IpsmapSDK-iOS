@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 @class IpsmapLocationManger;
 @class IpsLocation;
 @protocol IpsmapLocationDelegate <NSObject>

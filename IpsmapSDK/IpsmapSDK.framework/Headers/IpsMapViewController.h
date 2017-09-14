@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IpsLocationShareProtocol.h"
 
 @class IpsHospital;
 @interface IpsMapViewController : UIViewController
@@ -17,6 +18,9 @@
 
 - (nonnull instancetype)initWithMapId:(nonnull NSString *)mapId targetName:(nonnull NSString *)targetName targetId:(nonnull NSString *)targetId;
 
-- (void)setShareMapId:(NSString *_Nullable)mapId groupId:(NSString *_Nullable)groupId;
+@property (nonatomic, weak, nullable)id<IpsLocationShareProtocol> locationShareDelegate;
 
+- (void)setShareMapId:(NSString *_Nullable)mapId groupId:(NSString *_Nullable)groupId;
+- (void)setShareGroupNumber:(NSString *_Nullable)number params:(NSMutableDictionary *_Nullable)params;
+- (void)setLocationShareInfo:(nonnull NSDictionary *)params;
 @end

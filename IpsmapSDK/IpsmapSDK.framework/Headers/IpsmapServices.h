@@ -19,10 +19,10 @@
 
 @end
 
-@class IpsPartner;
+@class IpsAppInfo;
 @interface IpsmapServices : NSObject {
     @private
-    IpsPartner  *partner;
+    IpsAppInfo  *appInfo;
     
 }
 @property (nonatomic, weak)id<IpsmapServicesDelegate> _Nullable delegate;
@@ -30,15 +30,19 @@
 @property (nonatomic, readonly)NSArray * _Nullable hospitalAry;
 //是否在请求中
 @property (nonatomic, assign)BOOL   isInLoading;
-
+@property (nonatomic, assign)BOOL   isLaunch;
+//手机号
+@property (nonatomic, strong)NSString * _Nullable phoneNumber;
 + (nonnull instancetype)sharedInstance;
 
 + (void)setAppKey:(nonnull NSString *)appKey;
+//分享用的scheme
++ (void)setScheme:(nonnull NSString *)scheme;
 
 - (void)application:(UIApplication *_Nonnull)application didFinishLaunchingWithOptions:(NSDictionary *_Nullable)launchOptions;
 
 - (void)applicationWillEnterForeground:(UIApplication *_Nonnull)application;
-
+- (BOOL)application:(UIApplication *_Nonnull)application openURL:(NSURL *_Nonnull)url;
 //请求对应的医院列表
 - (void)requestPartnerHospitalList;
 

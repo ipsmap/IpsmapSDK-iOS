@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 extern NSString * const kAppCacheIFLyFile;
+extern NSString * const kAppCacheBeaconMapFile;
 
 @interface IpsFileManager : NSObject
 
@@ -36,7 +37,10 @@ extern NSString * const kAppCacheIFLyFile;
 + (BOOL)setUserGuideClicked;
 //新手引导是否查看过
 + (BOOL)isUserGuideClicked;
-
+//手机号登录
++ (BOOL)setIsLoginPhoneNumber:(NSString *)phoneNumber;
+//是否登录
++ (NSString *)getIsLoginPhoneNumber;
 //位置分享群的昵称
 + (BOOL)setShareUserName:(NSString *)name;
 + (NSString *)getShareUserName;
@@ -45,6 +49,8 @@ extern NSString * const kAppCacheIFLyFile;
 + (BOOL)setJoinedGroupList:(NSDictionary *)dic;
 + (NSDictionary *)getJoinedGroupList;
 
++ (NSDictionary *)getBeaconMap:(NSString *)mapName;
++ (BOOL)setBeaconMap:(NSString *)mapName with:(NSDictionary *)dic;
 
 
 @end
