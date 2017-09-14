@@ -64,6 +64,9 @@ $ pod install
 ```
 
 ### 位置共享功能
+
+## 使用粘贴板实现（SDK1.1.6未启用该实现方案）
+
 1、在 didFinishLaunchingWithOptions里面创建好window之后添加
 ```objective-c
     //检测位置共享口令是否存在
@@ -88,3 +91,20 @@ $ pod install
     });
 }
 ```
+
+## 使用微信分享SDK实现（SDK1.1.6开始使用）
+1、开发者可在自己的工程中接入微信SDK并完成register
+```objective-c
+   //例如在didFinishLaunchingWithOptions实现register
+   [WXApi registerApp:wxAppID];
+```
+2、将获取到的scheme配置到自己的工程中
+
+3、在每个IpsMapViewController创建完之后加上locationShareDelegate处理分享按钮点击的回调
+```objective-c
+     IpsMapViewController *vc = [[IpsMapViewController alloc] initWithMapId:@"lGaWCUtqoj"];
+    vc.locationShareDelegate = [IpsLocationShareHandle sharedInstance];
+    [self.navigationController pushViewController:vc animated:YES];
+```
+4、分享按钮点击的回调处理可以用demo中的IpsLocationShareHandle也可以自己写
+	
