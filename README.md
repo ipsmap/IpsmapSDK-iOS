@@ -100,6 +100,8 @@ $ pod install
 ```
 2、将获取到的scheme配置到自己的工程中
 
+  <img alt="IpsmapSDK" src="Readme.asset/scheme.jpg">
+  
 3、在每个IpsMapViewController创建完之后加上locationShareDelegate处理分享按钮点击的回调
 ```objective-c
      IpsMapViewController *vc = [[IpsMapViewController alloc] initWithMapId:@"lGaWCUtqoj"];
