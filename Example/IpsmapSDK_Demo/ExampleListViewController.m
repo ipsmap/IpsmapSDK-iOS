@@ -10,6 +10,7 @@
 #import <IpsmapSDK/IpsmapSDK.h>
 #import "APIKey.h"
 #import "ExampleLocationViewController.h"
+#import "IpsLocationShareHandle.h"
 
 
 @interface IpsExample : NSObject
@@ -56,11 +57,13 @@
 
 - (void)mapExample {
     IpsMapViewController *vc = [[IpsMapViewController alloc] initWithMapId:(NSString *)MapId];
+    vc.locationShareDelegate = [IpsLocationShareHandle sharedInstance];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)navigationExample {
     IpsMapViewController *vc = [[IpsMapViewController alloc] initWithMapId:(NSString *)MapId targetName:@"成人中医(珠)" targetId:@"200191"];
+    vc.locationShareDelegate = [IpsLocationShareHandle sharedInstance];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

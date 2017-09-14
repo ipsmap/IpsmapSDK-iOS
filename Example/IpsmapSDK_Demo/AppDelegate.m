@@ -10,6 +10,7 @@
 #import <IpsmapSDK/IpsmapSDK.h>
 #import "ExampleListViewController.h"
 #import "APIKey.h"
+#import "WXApi.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [WXApi registerApp:wxAppID];
     //初始化Ipsmap
     [IpsmapServices setAppKey:(NSString *)APIKey];
     
@@ -32,12 +34,25 @@
     [self.window makeKeyAndVisible];
     
     //检测位置共享口令是否存在
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ipsReceiveShareInfo:) name:IpsReceiveShareInfoNotification object:nil];
+    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ipsReceiveShareInfo:) name:IpsReceiveShareInfoNotification object:nil];
     [[IpsmapServices sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    if ([url.scheme isEqualToString:wxAppID]) {
+        return [WXApi handleOpenURL:url delegate:self];
+    }
+    return [[IpsmapServices sharedInstance] application:application openURL:url];
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
+    if ([url.scheme isEqualToString:wxAppID]) {
+        return [WXApi handleOpenURL:url delegate:self];
+    }
+    return [[IpsmapServices sharedInstance] application:app openURL:url];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

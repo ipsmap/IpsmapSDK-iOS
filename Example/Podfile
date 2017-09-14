@@ -7,4 +7,5 @@ target 'IpsmapSDK_Demo' do
     pod 'IpsmapSDK', :path => '../'
     #git路径
     #pod 'IpsmapSDK', :git => 'https://github.com/ipsmap/IpsmapSDK-iOS.git'
+    pod 'WechatOpenSDK'
 end

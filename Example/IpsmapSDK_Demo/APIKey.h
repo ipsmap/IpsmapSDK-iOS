@@ -11,7 +11,10 @@
 
 /* 使用IpsmapSDK，请联系道一循 https://ipsmap.com*/
 
-static NSString const *APIKey = @"DhGZ6Av4Sz";
+static NSString const *APIKey = @"mVCagVQH2O";
 static NSString const *MapId = @"lGaWCUtqoj";//广妇儿
+
+#warning 需要填写微信AppID
+#define wxAppID     @"wxd930ea5d5a258f4f"
 
 #endif /* APIKey_h */
