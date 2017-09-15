@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "IpsmapSDK"
-  s.version      = "1.1.0"
+  s.version      = "1.1.7"
   s.summary      = "室内导航SDK."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-	室内导航SDK第一版
+	室内导航 IpsmapSDK Indoor navigation map ibeacon hospital
                    DESC
 
   s.homepage     = "https://github.com/ipsmap/IpsmapSDK-iOS"
