@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "IpsmapServices.h"
 #import "IpsMapViewController.h"
-#import "IpsHospitalListViewController.h"
+//#import "IpsHospitalListViewController.h"
 
 #import "IpsUserGuideViewController.h"
 #import "IpsNavigationController.h"
