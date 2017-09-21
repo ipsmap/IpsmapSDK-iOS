@@ -40,7 +40,7 @@
     [self.manger stopLocatingEngine];
 }
 
-- (void)ipsmapLocationManager:(IpsmapLocationManger *_Nullable)manager didUpdateLocation:(IpsLocation *_Nullable)location {
+- (void)ipsmapLocationManager:(IpsmapLocationManger *_Nullable)manager didUpdateLocation:(IpsLocationInfo *_Nullable)location {
     if (location.inThisMap) {
         NSLog(@"在医院里面");
     }

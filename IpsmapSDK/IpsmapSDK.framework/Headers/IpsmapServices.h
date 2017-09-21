@@ -26,6 +26,7 @@
     
 }
 @property (nonatomic, weak)id<IpsmapServicesDelegate> _Nullable delegate;
+@property (nonatomic, readonly)NSString * _Nullable appKey;
 //医院列表
 @property (nonatomic, readonly)NSArray * _Nullable hospitalAry;
 //是否在请求中
@@ -33,6 +34,7 @@
 @property (nonatomic, assign)BOOL   isLaunch;
 //手机号
 @property (nonatomic, strong)NSString * _Nullable phoneNumber;
+@property (nonatomic, strong)NSString * _Nullable userId;
 + (nonnull instancetype)sharedInstance;
 
 + (void)setAppKey:(nonnull NSString *)appKey;

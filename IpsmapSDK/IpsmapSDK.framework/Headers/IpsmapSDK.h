@@ -17,7 +17,7 @@
 #import "IpsAlertView.h"
 
 #import "IpsmapLocationManger.h"
-#import "IpsLocation.h"
+#import "IpsLocationInfo.h"
 #import "IpsmapRequest.h"
 #import "IpsIbeaconManager.h"
 

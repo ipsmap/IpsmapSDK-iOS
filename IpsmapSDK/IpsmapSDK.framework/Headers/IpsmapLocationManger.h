@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 @class IpsmapLocationManger;
-@class IpsLocation;
+@class IpsLocationInfo;
 @protocol IpsmapLocationDelegate <NSObject>
 
-- (void)ipsmapLocationManager:(IpsmapLocationManger *_Nullable)manager didUpdateLocation:(IpsLocation *_Nullable)location;
+- (void)ipsmapLocationManager:(IpsmapLocationManger *_Nullable)manager didUpdateLocation:(IpsLocationInfo *_Nullable)location;
 
 @end
 
