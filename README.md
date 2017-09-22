@@ -104,7 +104,10 @@ $ pod install
   
 3、在每个IpsMapViewController创建完之后加上locationShareDelegate处理分享按钮点击的回调
 ```objective-c
-     IpsMapViewController *vc = [[IpsMapViewController alloc] initWithMapId:@"lGaWCUtqoj"];
+    //设置需要分享的平台
+    [IpsShareConfig showSharePlatforms:@[@(IpsShareTypeWeChat), @(IpsShareTypeQQ), @(IpsShareTypeSMS)]];
+
+    IpsMapViewController *vc = [[IpsMapViewController alloc] initWithMapId:@"lGaWCUtqoj"];
     vc.locationShareDelegate = [IpsLocationShareHandle sharedInstance];
     [self.navigationController pushViewController:vc animated:YES];
 ```
