@@ -56,6 +56,9 @@
 }
 
 - (void)mapExample {
+    //设置需要分享的平台
+    [IpsShareConfig showSharePlatforms:@[@(IpsShareTypeWeChat), @(IpsShareTypeQQ), @(IpsShareTypeSMS)]];
+    
     IpsMapViewController *vc = [[IpsMapViewController alloc] initWithMapId:(NSString *)MapId];
     vc.locationShareDelegate = [IpsLocationShareHandle sharedInstance];
     [self.navigationController pushViewController:vc animated:YES];
