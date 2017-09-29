@@ -12,7 +12,7 @@
 #import "APIKey.h"
 #import "WXApi.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<WXApiDelegate>
 
 @end
 
@@ -43,15 +43,17 @@
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     if ([url.scheme isEqualToString:wxAppID]) {
         return [WXApi handleOpenURL:url delegate:self];
-    }
-    return [[IpsmapServices sharedInstance] application:application openURL:url];
+    } else if ([url.scheme isEqualToString:IpsScheme])
+        return [[IpsmapServices sharedInstance] application:application openURL:url];
+    return YES;
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
     if ([url.scheme isEqualToString:wxAppID]) {
         return [WXApi handleOpenURL:url delegate:self];
-    }
-    return [[IpsmapServices sharedInstance] application:app openURL:url];
+    } else if ([url.scheme isEqualToString:IpsScheme])
+        return [[IpsmapServices sharedInstance] application:app openURL:url];
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
