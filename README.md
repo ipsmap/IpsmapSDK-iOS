@@ -112,4 +112,15 @@ $ pod install
     [self.navigationController pushViewController:vc animated:YES];
 ```
 4、分享按钮点击的回调处理可以用demo中的IpsLocationShareHandle也可以自己写
+
+5、点击分享链接App的处理在Appdelegate中的handleOpenURL方法加处理事件
+```objective-c
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    if ([url.scheme isEqualToString:wxAppID]) {
+        return [WXApi handleOpenURL:url delegate:self];
+    } else if ([url.scheme isEqualToString:IpsScheme])
+        return [[IpsmapServices sharedInstance] application:application openURL:url];
+    return YES;
+}
+```
 	
