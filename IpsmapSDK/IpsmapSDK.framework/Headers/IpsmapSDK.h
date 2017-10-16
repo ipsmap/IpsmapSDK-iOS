@@ -11,14 +11,11 @@
 #import "IpsMapViewController.h"
 //#import "IpsHospitalListViewController.h"
 
-#import "IpsUserGuideViewController.h"
 #import "IpsNavigationController.h"
-#import "IpsFileManager.h"
 #import "IpsAlertView.h"
 
 #import "IpsmapLocationManger.h"
 #import "IpsLocationInfo.h"
-#import "IpsmapRequest.h"
 #import "IpsIbeaconManager.h"
 
 //! Project version number for IpsmapSDK.
