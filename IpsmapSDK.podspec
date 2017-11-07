@@ -118,7 +118,8 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "UIKit", "Foundation", "QuartzCore", "SystemConfiguration", "CoreGraphics", "CoreLocation", "CoreTelephony", "AudioToolbox", "AVFoundation", "AddressBook", "Contacts"
+  s.frameworks = "UIKit", "Foundation", "QuartzCore", "SystemConfiguration", "CoreGraphics", "CoreLocation", "CoreTelephony", "AudioToolbox", "AVFoundation", "AddressBook"
+  s.weak_framework = "Contacts"
 
   # s.library   = "iconv"
   s.libraries = "z", "z.1.2.5", "xml2"
