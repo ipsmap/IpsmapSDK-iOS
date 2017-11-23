@@ -43,6 +43,9 @@
 - (void)ipsmapLocationManager:(IpsmapLocationManger *_Nullable)manager didUpdateLocation:(IpsLocationInfo *_Nullable)location {
     if (location.inThisMap) {
         NSLog(@"在医院里面");
+        [IpsAlertView showAlertWithTitle:nil message:@"在院内" cancelButtonTitle:@"OK" otherButtonTitles:nil completion:nil];
+    }else {
+        [IpsAlertView showAlertWithTitle:nil message:@"在院外" cancelButtonTitle:@"OK" otherButtonTitles:nil completion:nil];
     }
 }
 

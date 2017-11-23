@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "IpsmapServices.h"
+#import "IpsUserInfo.h"
 #import "IpsMapViewController.h"
 //#import "IpsHospitalListViewController.h"
 

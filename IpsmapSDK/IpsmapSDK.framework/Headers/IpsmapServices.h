@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "IpsUserInfo.h"
 
 //剪贴板内有位置共享口令
 #define IpsReceiveShareInfoNotification     @"IpsNotificationReceiveShareInfo"
+
+typedef void (^ IpsOpenURLResult)(BOOL isValid, NSDictionary *params);
+
 
 @protocol IpsmapServicesDelegate <NSObject>
 
@@ -27,14 +31,13 @@
 }
 @property (nonatomic, weak)id<IpsmapServicesDelegate> _Nullable delegate;
 @property (nonatomic, readonly)NSString * _Nullable appKey;
+//验证Appkey的有效性
+@property (nonatomic, assign)BOOL       isAppKeyValid;
 //医院列表
 @property (nonatomic, readonly)NSArray * _Nullable hospitalAry;
-//是否在请求中
-@property (nonatomic, assign)BOOL   isInLoading;
-@property (nonatomic, assign)BOOL   isLaunch;
-//手机号
-@property (nonatomic, strong)NSString * _Nullable phoneNumber;
-@property (nonatomic, strong)NSString * _Nullable userId;
+//用户信息
+@property (nonatomic, strong)IpsUserInfo * _Nullable userInfo;
+
 + (nonnull instancetype)sharedInstance;
 
 + (void)setAppKey:(nonnull NSString *)appKey;
@@ -44,7 +47,7 @@
 - (void)application:(UIApplication *_Nonnull)application didFinishLaunchingWithOptions:(NSDictionary *_Nullable)launchOptions;
 
 - (void)applicationWillEnterForeground:(UIApplication *_Nonnull)application;
-- (BOOL)application:(UIApplication *_Nonnull)application openURL:(NSURL *_Nonnull)url;
+- (BOOL)application:(UIApplication *_Nonnull)application openURL:(NSURL *_Nonnull)url block:(IpsOpenURLResult _Nullable )block;
 //请求对应的医院列表
 - (void)requestPartnerHospitalList;
 
