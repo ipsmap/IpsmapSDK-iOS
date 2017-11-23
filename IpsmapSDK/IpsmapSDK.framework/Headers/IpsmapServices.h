@@ -48,6 +48,9 @@ typedef void (^ IpsOpenURLResult)(BOOL isValid, NSDictionary *params);
 
 - (void)applicationWillEnterForeground:(UIApplication *_Nonnull)application;
 - (BOOL)application:(UIApplication *_Nonnull)application openURL:(NSURL *_Nonnull)url block:(IpsOpenURLResult _Nullable )block;
+//位置共享功能需传入支持IpsLocationShareProtocol的delegate
+- (BOOL)application:(UIApplication *_Nonnull)application openURL:(NSURL *_Nonnull)url delegate:(id _Nullable)delegate;
+
 //请求对应的医院列表
 - (void)requestPartnerHospitalList;
 

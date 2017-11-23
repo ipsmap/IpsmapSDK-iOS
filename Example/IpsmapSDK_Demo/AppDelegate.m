@@ -11,6 +11,7 @@
 #import "ExampleListViewController.h"
 #import "APIKey.h"
 #import "WXApi.h"
+#import "IpsLocationShareHandle.h"
 
 @interface AppDelegate ()<WXApiDelegate>
 
@@ -37,6 +38,12 @@
     //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ipsReceiveShareInfo:) name:IpsReceiveShareInfoNotification object:nil];
     [[IpsmapServices sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
+    //登录成功后或者获取到用户信息后调用
+    IpsUserInfo *userInfo = [IpsUserInfo new];
+    userInfo.name = @"张三";
+    userInfo.phoneNumber = @"13888888888";
+    [IpsmapServices sharedInstance].userInfo = userInfo;
+    
     return YES;
 }
 
@@ -44,7 +51,7 @@
     if ([url.scheme isEqualToString:wxAppID]) {
         return [WXApi handleOpenURL:url delegate:self];
     } else if ([url.scheme isEqualToString:IpsScheme])
-        return [[IpsmapServices sharedInstance] application:application openURL:url];
+        return [[IpsmapServices sharedInstance] application:application openURL:url delegate:[IpsLocationShareHandle sharedInstance]];
     return YES;
 }
 
@@ -52,7 +59,7 @@
     if ([url.scheme isEqualToString:wxAppID]) {
         return [WXApi handleOpenURL:url delegate:self];
     } else if ([url.scheme isEqualToString:IpsScheme])
-        return [[IpsmapServices sharedInstance] application:app openURL:url];
+        return [[IpsmapServices sharedInstance] application:app openURL:url delegate:[IpsLocationShareHandle sharedInstance]];
     return YES;
 }
 
