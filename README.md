@@ -115,14 +115,22 @@ $ pod install
 ```
 4、分享按钮点击的回调处理可以用demo中的IpsLocationShareHandle也可以自己写
 
-5、点击分享链接App的处理在Appdelegate中的handleOpenURL方法加处理事件
+5、点击分享链接App的处理在Appdelegate中的handleOpenURL方法加处理事件,delegate 需要支持IpsLocationShareProtocol协议
 ```objective-c
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     if ([url.scheme isEqualToString:wxAppID]) {
         return [WXApi handleOpenURL:url delegate:self];
     } else if ([url.scheme isEqualToString:IpsScheme])
-        return [[IpsmapServices sharedInstance] application:application openURL:url];
+        return [[IpsmapServices sharedInstance] application:application openURL:url delegate:[IpsLocationShareHandle sharedInstance]];
     return YES;
 }
+```
+
+6、为了方便位置共享可以默认填写用户昵称，可在登录成功或者切换用户等获取到用户信息后传递用户信息
+```objective-c
+    IpsUserInfo *userInfo = [IpsUserInfo new];
+    userInfo.name = @"张三";
+    userInfo.phoneNumber = @"13888888888";
+    [IpsmapServices sharedInstance].userInfo = userInfo;
 ```
 	
