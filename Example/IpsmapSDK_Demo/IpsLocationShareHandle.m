@@ -83,10 +83,8 @@
 }
 
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result {
-    if (result == 0) {
         UIViewController *rootVC = [[[[UIApplication sharedApplication] windows] firstObject] rootViewController];
         [rootVC dismissViewControllerAnimated:YES completion:nil];
-    }
 }
 
 @end
