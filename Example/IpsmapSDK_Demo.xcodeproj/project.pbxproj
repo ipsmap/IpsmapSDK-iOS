@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3ADFFB20736B5400A1F36B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ADFFA20736B5400A1F36B /* main.m */; };
+		3F3AE00820736BC100A1F36B /* ExampleLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ADFFF20736BC000A1F36B /* ExampleLocationViewController.m */; };
+		3F3AE00920736BC100A1F36B /* ExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AE00320736BC000A1F36B /* ExampleListViewController.m */; };
+		3F3AE00A20736BC100A1F36B /* IpsLocationShareHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AE00620736BC100A1F36B /* IpsLocationShareHandle.m */; };
+		3F3AE00B20736BC100A1F36B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AE00720736BC100A1F36B /* AppDelegate.m */; };
+		3F3AE02120736D3A00A1F36B /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE02020736D3A00A1F36B /* libWeChatSDK.a */; };
+		3F3AE02320736D7B00A1F36B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE02220736D7A00A1F36B /* libsqlite3.tbd */; };
+		3F3AE02520736D9000A1F36B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE02420736D9000A1F36B /* CFNetwork.framework */; };
+		3F3AE02720736DB000A1F36B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE02620736DB000A1F36B /* SystemConfiguration.framework */; };
+		3F3AE02920736DC900A1F36B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE02820736DC900A1F36B /* libz.tbd */; };
+		3F3AE02B20736DDB00A1F36B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE02A20736DDB00A1F36B /* CoreTelephony.framework */; };
+		3F3AE02D20736DF000A1F36B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE02C20736DF000A1F36B /* libc++.tbd */; };
+		3F3AE02F207383E700A1F36B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE02E207383E700A1F36B /* Security.framework */; };
+		3F3AE03720738A1000A1F36B /* IpsmapSDK.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AE03520738A0F00A1F36B /* IpsmapSDK.xcassets */; };
+		3F3AE03820738A1000A1F36B /* IpsmapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE03620738A0F00A1F36B /* IpsmapSDK.framework */; };
+		3F3AE03A20738A2800A1F36B /* IpsmapSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE03620738A0F00A1F36B /* IpsmapSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F3AE0402074669D00A1F36B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AE03E2074669D00A1F36B /* LaunchScreen.storyboard */; };
+		3F3AE042207466A500A1F36B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AE041207466A500A1F36B /* Assets.xcassets */; };
 		3F8BF5601F6A11DF00C8243F /* IpsLocationShareHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BF55E1F6A11DF00C8243F /* IpsLocationShareHandle.m */; };
 		3FB6E83F1EF0D9A400A67BC3 /* ExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6E83E1EF0D9A400A67BC3 /* ExampleListViewController.m */; };
 		3FB6E8421EF0EA4400A67BC3 /* ExampleLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6E8411EF0EA4400A67BC3 /* ExampleLocationViewController.m */; };
@@ -36,8 +54,49 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3F3AE01420736C0E00A1F36B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3F3AE03A20738A2800A1F36B /* IpsmapSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		25F00BE4824CBD33B62ED2F1 /* Pods-IpsmapSDK_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpsmapSDK_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IpsmapSDK_Demo/Pods-IpsmapSDK_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		3F3ADFE920736B5300A1F36B /* IpsmapSDK_Local.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IpsmapSDK_Local.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3ADFF920736B5400A1F36B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3ADFFA20736B5400A1F36B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F3ADFFF20736BC000A1F36B /* ExampleLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleLocationViewController.m; path = IpsmapSDK_Demo/ExampleLocationViewController.m; sourceTree = SOURCE_ROOT; };
+		3F3AE00020736BC000A1F36B /* ExampleLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleLocationViewController.h; path = IpsmapSDK_Demo/ExampleLocationViewController.h; sourceTree = SOURCE_ROOT; };
+		3F3AE00120736BC000A1F36B /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIKey.h; path = IpsmapSDK_Demo/APIKey.h; sourceTree = SOURCE_ROOT; };
+		3F3AE00220736BC000A1F36B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = IpsmapSDK_Demo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		3F3AE00320736BC000A1F36B /* ExampleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleListViewController.m; path = IpsmapSDK_Demo/ExampleListViewController.m; sourceTree = SOURCE_ROOT; };
+		3F3AE00420736BC100A1F36B /* ExampleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleListViewController.h; path = IpsmapSDK_Demo/ExampleListViewController.h; sourceTree = SOURCE_ROOT; };
+		3F3AE00520736BC100A1F36B /* IpsLocationShareHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IpsLocationShareHandle.h; path = IpsmapSDK_Demo/IpsLocationShareHandle.h; sourceTree = SOURCE_ROOT; };
+		3F3AE00620736BC100A1F36B /* IpsLocationShareHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IpsLocationShareHandle.m; path = IpsmapSDK_Demo/IpsLocationShareHandle.m; sourceTree = SOURCE_ROOT; };
+		3F3AE00720736BC100A1F36B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = IpsmapSDK_Demo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		3F3AE01D20736D3A00A1F36B /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		3F3AE01E20736D3A00A1F36B /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		3F3AE01F20736D3A00A1F36B /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		3F3AE02020736D3A00A1F36B /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		3F3AE02220736D7A00A1F36B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3F3AE02420736D9000A1F36B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3F3AE02620736DB000A1F36B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3F3AE02820736DC900A1F36B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3F3AE02A20736DDB00A1F36B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3F3AE02C20736DF000A1F36B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3F3AE02E207383E700A1F36B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3F3AE03520738A0F00A1F36B /* IpsmapSDK.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IpsmapSDK.xcassets; sourceTree = "<group>"; };
+		3F3AE03620738A0F00A1F36B /* IpsmapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IpsmapSDK.framework; sourceTree = "<group>"; };
+		3F3AE03F2074669D00A1F36B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F3AE041207466A500A1F36B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F8BF55E1F6A11DF00C8243F /* IpsLocationShareHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpsLocationShareHandle.m; sourceTree = "<group>"; };
 		3F8BF55F1F6A11DF00C8243F /* IpsLocationShareHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpsLocationShareHandle.h; sourceTree = "<group>"; };
 		3FB6E83D1EF0D9A400A67BC3 /* ExampleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleListViewController.h; sourceTree = "<group>"; };
@@ -63,6 +122,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F3ADFE620736B5300A1F36B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3AE02F207383E700A1F36B /* Security.framework in Frameworks */,
+				3F3AE02D20736DF000A1F36B /* libc++.tbd in Frameworks */,
+				3F3AE02B20736DDB00A1F36B /* CoreTelephony.framework in Frameworks */,
+				3F3AE02920736DC900A1F36B /* libz.tbd in Frameworks */,
+				3F3AE03820738A1000A1F36B /* IpsmapSDK.framework in Frameworks */,
+				3F3AE02720736DB000A1F36B /* SystemConfiguration.framework in Frameworks */,
+				3F3AE02520736D9000A1F36B /* CFNetwork.framework in Frameworks */,
+				3F3AE02320736D7B00A1F36B /* libsqlite3.tbd in Frameworks */,
+				3F3AE02120736D3A00A1F36B /* libWeChatSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FEBD3DD1EEA8FCF008ED9D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,6 +166,13 @@
 		055A46E56CB664E210FB1317 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F3AE02E207383E700A1F36B /* Security.framework */,
+				3F3AE02C20736DF000A1F36B /* libc++.tbd */,
+				3F3AE02A20736DDB00A1F36B /* CoreTelephony.framework */,
+				3F3AE02820736DC900A1F36B /* libz.tbd */,
+				3F3AE02620736DB000A1F36B /* SystemConfiguration.framework */,
+				3F3AE02420736D9000A1F36B /* CFNetwork.framework */,
+				3F3AE02220736D7A00A1F36B /* libsqlite3.tbd */,
 				DBEC1126CAB70202EF0D16A9 /* libPods-IpsmapSDK_Demo.a */,
 			);
 			name = Frameworks;
@@ -105,12 +187,63 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3F3ADFEA20736B5300A1F36B /* IpsmapSDK_Local */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AE03420738A0F00A1F36B /* IpsmapSDK */,
+				3F3AE01B20736D3A00A1F36B /* WechatOpenSDK */,
+				3F3AE00120736BC000A1F36B /* APIKey.h */,
+				3F3AE00220736BC000A1F36B /* AppDelegate.h */,
+				3F3AE00720736BC100A1F36B /* AppDelegate.m */,
+				3F3AE00420736BC100A1F36B /* ExampleListViewController.h */,
+				3F3AE00320736BC000A1F36B /* ExampleListViewController.m */,
+				3F3AE00020736BC000A1F36B /* ExampleLocationViewController.h */,
+				3F3ADFFF20736BC000A1F36B /* ExampleLocationViewController.m */,
+				3F3AE00520736BC100A1F36B /* IpsLocationShareHandle.h */,
+				3F3AE00620736BC100A1F36B /* IpsLocationShareHandle.m */,
+				3F3AE041207466A500A1F36B /* Assets.xcassets */,
+				3F3AE03E2074669D00A1F36B /* LaunchScreen.storyboard */,
+				3F3ADFF920736B5400A1F36B /* Info.plist */,
+				3F3ADFFA20736B5400A1F36B /* main.m */,
+			);
+			path = IpsmapSDK_Local;
+			sourceTree = "<group>";
+		};
+		3F3AE01B20736D3A00A1F36B /* WechatOpenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AE01C20736D3A00A1F36B /* OpenSDK1.8.0 */,
+			);
+			path = WechatOpenSDK;
+			sourceTree = "<group>";
+		};
+		3F3AE01C20736D3A00A1F36B /* OpenSDK1.8.0 */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AE01D20736D3A00A1F36B /* WXApi.h */,
+				3F3AE01E20736D3A00A1F36B /* WXApiObject.h */,
+				3F3AE01F20736D3A00A1F36B /* WechatAuthSDK.h */,
+				3F3AE02020736D3A00A1F36B /* libWeChatSDK.a */,
+			);
+			path = OpenSDK1.8.0;
+			sourceTree = "<group>";
+		};
+		3F3AE03420738A0F00A1F36B /* IpsmapSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AE03520738A0F00A1F36B /* IpsmapSDK.xcassets */,
+				3F3AE03620738A0F00A1F36B /* IpsmapSDK.framework */,
+			);
+			path = IpsmapSDK;
+			sourceTree = "<group>";
+		};
 		3FEBD3D71EEA8FCF008ED9D2 = {
 			isa = PBXGroup;
 			children = (
 				3FEBD3E21EEA8FCF008ED9D2 /* IpsmapSDK_Demo */,
 				3FEBD3FC1EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests */,
 				3FEBD4071EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests */,
+				3F3ADFEA20736B5300A1F36B /* IpsmapSDK_Local */,
 				3FEBD3E11EEA8FCF008ED9D2 /* Products */,
 				14A2F726E8B3704861E92DC1 /* Pods */,
 				055A46E56CB664E210FB1317 /* Frameworks */,
@@ -123,6 +256,7 @@
 				3FEBD3E01EEA8FCF008ED9D2 /* IpsmapSDK_Demo.app */,
 				3FEBD3F91EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.xctest */,
 				3FEBD4041EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.xctest */,
+				3F3ADFE920736B5300A1F36B /* IpsmapSDK_Local.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +310,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3F3ADFE820736B5300A1F36B /* IpsmapSDK_Local */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F3ADFFE20736B5400A1F36B /* Build configuration list for PBXNativeTarget "IpsmapSDK_Local" */;
+			buildPhases = (
+				3F3ADFE520736B5300A1F36B /* Sources */,
+				3F3ADFE620736B5300A1F36B /* Frameworks */,
+				3F3ADFE720736B5300A1F36B /* Resources */,
+				3F3AE01420736C0E00A1F36B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IpsmapSDK_Local;
+			productName = IpsmapSDK_Local;
+			productReference = 3F3ADFE920736B5300A1F36B /* IpsmapSDK_Local.app */;
+			productType = "com.apple.product-type.application";
+		};
 		3FEBD3DF1EEA8FCF008ED9D2 /* IpsmapSDK_Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FEBD40D1EEA8FCF008ED9D2 /* Build configuration list for PBXNativeTarget "IpsmapSDK_Demo" */;
@@ -241,6 +393,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = zhangty;
 				TargetAttributes = {
+					3F3ADFE820736B5300A1F36B = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = G3KRMQC7T9;
+						ProvisioningStyle = Automatic;
+					};
 					3FEBD3DF1EEA8FCF008ED9D2 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = G3KRMQC7T9;
@@ -276,11 +433,22 @@
 				3FEBD3DF1EEA8FCF008ED9D2 /* IpsmapSDK_Demo */,
 				3FEBD3F81EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests */,
 				3FEBD4031EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests */,
+				3F3ADFE820736B5300A1F36B /* IpsmapSDK_Local */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3F3ADFE720736B5300A1F36B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3AE03720738A1000A1F36B /* IpsmapSDK.xcassets in Resources */,
+				3F3AE042207466A500A1F36B /* Assets.xcassets in Resources */,
+				3F3AE0402074669D00A1F36B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FEBD3DE1EEA8FCF008ED9D2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +532,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3F3ADFE520736B5300A1F36B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3AE00820736BC100A1F36B /* ExampleLocationViewController.m in Sources */,
+				3F3AE00920736BC100A1F36B /* ExampleListViewController.m in Sources */,
+				3F3ADFFB20736B5400A1F36B /* main.m in Sources */,
+				3F3AE00A20736BC100A1F36B /* IpsLocationShareHandle.m in Sources */,
+				3F3AE00B20736BC100A1F36B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FEBD3DC1EEA8FCF008ED9D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,6 +588,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3F3AE03E2074669D00A1F36B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F3AE03F2074669D00A1F36B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		3FEBD3F11EEA8FCF008ED9D2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -419,6 +607,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3F3ADFFC20736B5400A1F36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IpsmapSDK_Local",
+					"$(PROJECT_DIR)/IpsmapSDK_Local/IpsmapSDK",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IpsmapSDK_Local/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IpsmapSDK_Local/WechatOpenSDK/OpenSDK1.8.0",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ipsmap.IpsmapSDK-Local";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F3ADFFD20736B5400A1F36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IpsmapSDK_Local",
+					"$(PROJECT_DIR)/IpsmapSDK_Local/IpsmapSDK",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IpsmapSDK_Local/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IpsmapSDK_Local/WechatOpenSDK/OpenSDK1.8.0",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ipsmap.IpsmapSDK-Local";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3FEBD40B1EEA8FCF008ED9D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -594,6 +864,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F3ADFFE20736B5400A1F36B /* Build configuration list for PBXNativeTarget "IpsmapSDK_Local" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3ADFFC20736B5400A1F36B /* Debug */,
+				3F3ADFFD20736B5400A1F36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3FEBD3DB1EEA8FCF008ED9D2 /* Build configuration list for PBXProject "IpsmapSDK_Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
