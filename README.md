@@ -10,7 +10,7 @@ IpsmapSDK-iOS 是一套基于 iOS 8.0 及以上版本的室内地图应用程序
 ## 使用CocoaPods部署
 在Podfile中使用命令如下：
 ```bash
-pod 'IpsmapSDK', '~> 1.0'
+pod 'IpsmapSDK', '~> 1.2.8'
 ```
 然后运行以下命令
 
