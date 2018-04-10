@@ -20,11 +20,11 @@
 		3F3AE02B20736DDB00A1F36B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE02A20736DDB00A1F36B /* CoreTelephony.framework */; };
 		3F3AE02D20736DF000A1F36B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE02C20736DF000A1F36B /* libc++.tbd */; };
 		3F3AE02F207383E700A1F36B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE02E207383E700A1F36B /* Security.framework */; };
-		3F3AE03720738A1000A1F36B /* IpsmapSDK.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AE03520738A0F00A1F36B /* IpsmapSDK.xcassets */; };
-		3F3AE03820738A1000A1F36B /* IpsmapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE03620738A0F00A1F36B /* IpsmapSDK.framework */; };
-		3F3AE03A20738A2800A1F36B /* IpsmapSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE03620738A0F00A1F36B /* IpsmapSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F3AE0402074669D00A1F36B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AE03E2074669D00A1F36B /* LaunchScreen.storyboard */; };
 		3F3AE042207466A500A1F36B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AE041207466A500A1F36B /* Assets.xcassets */; };
+		3F3AE04C207CD81200A1F36B /* IpsmapSDK.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AE049207CD81200A1F36B /* IpsmapSDK.xcassets */; };
+		3F3AE04D207CD81200A1F36B /* IpsmapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE04B207CD81200A1F36B /* IpsmapSDK.framework */; };
+		3F3AE04E207CD81D00A1F36B /* IpsmapSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE04B207CD81200A1F36B /* IpsmapSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F8BF5601F6A11DF00C8243F /* IpsLocationShareHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BF55E1F6A11DF00C8243F /* IpsLocationShareHandle.m */; };
 		3FB6E83F1EF0D9A400A67BC3 /* ExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6E83E1EF0D9A400A67BC3 /* ExampleListViewController.m */; };
 		3FB6E8421EF0EA4400A67BC3 /* ExampleLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6E8411EF0EA4400A67BC3 /* ExampleLocationViewController.m */; };
@@ -61,7 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3F3AE03A20738A2800A1F36B /* IpsmapSDK.framework in Embed Frameworks */,
+				3F3AE04E207CD81D00A1F36B /* IpsmapSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,10 +93,10 @@
 		3F3AE02A20736DDB00A1F36B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		3F3AE02C20736DF000A1F36B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		3F3AE02E207383E700A1F36B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		3F3AE03520738A0F00A1F36B /* IpsmapSDK.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IpsmapSDK.xcassets; sourceTree = "<group>"; };
-		3F3AE03620738A0F00A1F36B /* IpsmapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IpsmapSDK.framework; sourceTree = "<group>"; };
 		3F3AE03F2074669D00A1F36B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3AE041207466A500A1F36B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F3AE049207CD81200A1F36B /* IpsmapSDK.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = IpsmapSDK.xcassets; path = ../../IpsmapSDK.xcassets; sourceTree = "<group>"; };
+		3F3AE04B207CD81200A1F36B /* IpsmapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IpsmapSDK.framework; sourceTree = "<group>"; };
 		3F8BF55E1F6A11DF00C8243F /* IpsLocationShareHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpsLocationShareHandle.m; sourceTree = "<group>"; };
 		3F8BF55F1F6A11DF00C8243F /* IpsLocationShareHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpsLocationShareHandle.h; sourceTree = "<group>"; };
 		3FB6E83D1EF0D9A400A67BC3 /* ExampleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleListViewController.h; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 				3F3AE02D20736DF000A1F36B /* libc++.tbd in Frameworks */,
 				3F3AE02B20736DDB00A1F36B /* CoreTelephony.framework in Frameworks */,
 				3F3AE02920736DC900A1F36B /* libz.tbd in Frameworks */,
-				3F3AE03820738A1000A1F36B /* IpsmapSDK.framework in Frameworks */,
+				3F3AE04D207CD81200A1F36B /* IpsmapSDK.framework in Frameworks */,
 				3F3AE02720736DB000A1F36B /* SystemConfiguration.framework in Frameworks */,
 				3F3AE02520736D9000A1F36B /* CFNetwork.framework in Frameworks */,
 				3F3AE02320736D7B00A1F36B /* libsqlite3.tbd in Frameworks */,
@@ -190,7 +190,8 @@
 		3F3ADFEA20736B5300A1F36B /* IpsmapSDK_Local */ = {
 			isa = PBXGroup;
 			children = (
-				3F3AE03420738A0F00A1F36B /* IpsmapSDK */,
+				3F3AE04A207CD81200A1F36B /* IpsmapSDK */,
+				3F3AE049207CD81200A1F36B /* IpsmapSDK.xcassets */,
 				3F3AE01B20736D3A00A1F36B /* WechatOpenSDK */,
 				3F3AE00120736BC000A1F36B /* APIKey.h */,
 				3F3AE00220736BC000A1F36B /* AppDelegate.h */,
@@ -228,13 +229,13 @@
 			path = OpenSDK1.8.0;
 			sourceTree = "<group>";
 		};
-		3F3AE03420738A0F00A1F36B /* IpsmapSDK */ = {
+		3F3AE04A207CD81200A1F36B /* IpsmapSDK */ = {
 			isa = PBXGroup;
 			children = (
-				3F3AE03520738A0F00A1F36B /* IpsmapSDK.xcassets */,
-				3F3AE03620738A0F00A1F36B /* IpsmapSDK.framework */,
+				3F3AE04B207CD81200A1F36B /* IpsmapSDK.framework */,
 			);
-			path = IpsmapSDK;
+			name = IpsmapSDK;
+			path = ../../IpsmapSDK;
 			sourceTree = "<group>";
 		};
 		3FEBD3D71EEA8FCF008ED9D2 = {
@@ -443,8 +444,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F3AE03720738A1000A1F36B /* IpsmapSDK.xcassets in Resources */,
 				3F3AE042207466A500A1F36B /* Assets.xcassets in Resources */,
+				3F3AE04C207CD81200A1F36B /* IpsmapSDK.xcassets in Resources */,
 				3F3AE0402074669D00A1F36B /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,7 +629,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IpsmapSDK_Local",
-					"$(PROJECT_DIR)/IpsmapSDK_Local/IpsmapSDK",
+					"$(PROJECT_DIR)/../IpsmapSDK",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = IpsmapSDK_Local/Info.plist;
@@ -669,7 +670,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IpsmapSDK_Local",
-					"$(PROJECT_DIR)/IpsmapSDK_Local/IpsmapSDK",
+					"$(PROJECT_DIR)/../IpsmapSDK",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = IpsmapSDK_Local/Info.plist;
