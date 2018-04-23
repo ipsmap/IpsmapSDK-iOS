@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "IpsmapSDK"
-  s.version      = "1.2.8"
+  s.version      = "1.2.9"
   s.summary      = "室内导航SDK."
 
   # This description is used to generate tags and improve search results.
