@@ -108,7 +108,7 @@ Pod::Spec.new do |s|
   # s.resource  = "icon.png"
   #s.resources = "IpsmapSDK.xcassets"
   s.resource_bundles = {
-      'IpsmapSDK' => ['IpsmapSDK.xcassets/*.png']
+      'IpsmapSDK' => ['IpsmapSDK.xcassets']
   }
 
 
