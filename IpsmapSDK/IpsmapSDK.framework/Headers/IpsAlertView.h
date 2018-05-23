@@ -18,4 +18,6 @@ typedef void(^IpsAlertViewCompletion)(NSUInteger selectedOtherButtonIndex);
          otherButtonTitles:(NSArray *)otherButtonTitles
                 completion:(IpsAlertViewCompletion)completion NS_EXTENSION_UNAVAILABLE_IOS("");
 
++ (void)showNetworkNotReachable;
+
 @end

@@ -12,6 +12,7 @@
 #import "IpsMapViewController.h"
 //#import "IpsHospitalListViewController.h"
 
+#import "IpsReachability.h"
 #import "IpsNavigationController.h"
 #import "IpsAlertView.h"
 
