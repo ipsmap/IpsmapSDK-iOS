@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "IpsmapSDK.xcassets"
+  s.resources = "IpsmapSDK/IpsmapSDK.xcassets"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
