@@ -22,7 +22,6 @@
 		3F3AE02F207383E700A1F36B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE02E207383E700A1F36B /* Security.framework */; };
 		3F3AE0402074669D00A1F36B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AE03E2074669D00A1F36B /* LaunchScreen.storyboard */; };
 		3F3AE042207466A500A1F36B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AE041207466A500A1F36B /* Assets.xcassets */; };
-		3F3AE04C207CD81200A1F36B /* IpsmapSDK.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AE049207CD81200A1F36B /* IpsmapSDK.xcassets */; };
 		3F3AE04D207CD81200A1F36B /* IpsmapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE04B207CD81200A1F36B /* IpsmapSDK.framework */; };
 		3F3AE04E207CD81D00A1F36B /* IpsmapSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AE04B207CD81200A1F36B /* IpsmapSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F8BF5601F6A11DF00C8243F /* IpsLocationShareHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BF55E1F6A11DF00C8243F /* IpsLocationShareHandle.m */; };
@@ -34,7 +33,7 @@
 		3FEBD3F31EEA8FCF008ED9D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEBD3F11EEA8FCF008ED9D2 /* LaunchScreen.storyboard */; };
 		3FEBD3FE1EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBD3FD1EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.m */; };
 		3FEBD4091EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBD4081EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.m */; };
-		B5CFE47F63BAB872A614D949 /* libPods-IpsmapSDK_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEC1126CAB70202EF0D16A9 /* libPods-IpsmapSDK_Demo.a */; };
+		E706D45723A6870F63C23A73 /* libPods-IpsmapSDK_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8EBEFD3B2C853628D2E945C /* libPods-IpsmapSDK_Demo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +94,6 @@
 		3F3AE02E207383E700A1F36B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3F3AE03F2074669D00A1F36B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3AE041207466A500A1F36B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3F3AE049207CD81200A1F36B /* IpsmapSDK.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = IpsmapSDK.xcassets; path = ../../IpsmapSDK.xcassets; sourceTree = "<group>"; };
 		3F3AE04B207CD81200A1F36B /* IpsmapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IpsmapSDK.framework; sourceTree = "<group>"; };
 		3F8BF55E1F6A11DF00C8243F /* IpsLocationShareHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpsLocationShareHandle.m; sourceTree = "<group>"; };
 		3F8BF55F1F6A11DF00C8243F /* IpsLocationShareHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpsLocationShareHandle.h; sourceTree = "<group>"; };
@@ -118,7 +116,7 @@
 		3FEBD4081EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IpsmapSDK_DemoUITests.m; sourceTree = "<group>"; };
 		3FEBD40A1EEA8FCF008ED9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		691C6A2A00243E6485D167EC /* Pods-IpsmapSDK_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpsmapSDK_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-IpsmapSDK_Demo/Pods-IpsmapSDK_Demo.release.xcconfig"; sourceTree = "<group>"; };
-		DBEC1126CAB70202EF0D16A9 /* libPods-IpsmapSDK_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IpsmapSDK_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8EBEFD3B2C853628D2E945C /* libPods-IpsmapSDK_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IpsmapSDK_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CFE47F63BAB872A614D949 /* libPods-IpsmapSDK_Demo.a in Frameworks */,
+				E706D45723A6870F63C23A73 /* libPods-IpsmapSDK_Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +171,7 @@
 				3F3AE02620736DB000A1F36B /* SystemConfiguration.framework */,
 				3F3AE02420736D9000A1F36B /* CFNetwork.framework */,
 				3F3AE02220736D7A00A1F36B /* libsqlite3.tbd */,
-				DBEC1126CAB70202EF0D16A9 /* libPods-IpsmapSDK_Demo.a */,
+				F8EBEFD3B2C853628D2E945C /* libPods-IpsmapSDK_Demo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				3F3AE04A207CD81200A1F36B /* IpsmapSDK */,
-				3F3AE049207CD81200A1F36B /* IpsmapSDK.xcassets */,
 				3F3AE01B20736D3A00A1F36B /* WechatOpenSDK */,
 				3F3AE00120736BC000A1F36B /* APIKey.h */,
 				3F3AE00220736BC000A1F36B /* AppDelegate.h */,
@@ -338,7 +335,6 @@
 				3FEBD3DD1EEA8FCF008ED9D2 /* Frameworks */,
 				3FEBD3DE1EEA8FCF008ED9D2 /* Resources */,
 				D1506AF37CA22F1AEBE4A8EF /* [CP] Embed Pods Frameworks */,
-				A9A08B8419D8FAAAF8112C0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -445,7 +441,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3AE042207466A500A1F36B /* Assets.xcassets in Resources */,
-				3F3AE04C207CD81200A1F36B /* IpsmapSDK.xcassets in Resources */,
 				3F3AE0402074669D00A1F36B /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,24 +471,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A9A08B8419D8FAAAF8112C0C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-IpsmapSDK_Demo/Pods-IpsmapSDK_Demo-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/IpsmapSDK/IpsmapSDK.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IpsmapSDK.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IpsmapSDK_Demo/Pods-IpsmapSDK_Demo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CBC4C8733D1E2F687EDF6D78 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
