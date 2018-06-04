@@ -19,7 +19,7 @@ $ pod install
 ```
 
 ## 手动集成
-1. 将SDK文件中包含的IpsmapSDK.framework添加到工程中。
+1. 将SDK文件中包含的IpsmapSDK.framework、~~IpsmapSDK.xcassets两个文件~~添加到工程中。
 2. 开发者需要在工程中链接上：CoreTelephony.framework、SystemConfiguration.framework、CFNetwork.framework、libz.tbd、libc++.tbd、libsqlite3.tbd。
 3. 同时需要在Embedded Binaries 中链接上IpsmapSDK.framework(动态链接库）如下图所示
 
