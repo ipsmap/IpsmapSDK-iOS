@@ -5,7 +5,7 @@ IpsmapSDK-iOS 是一套基于 iOS 8.0 及以上版本的室内地图应用程序
 ## 获取AppKey
 请填写
 **[申请表](https://github.com/ipsmap/IpsmapSDK-iOS/blob/master/Readme.asset/道一循公司医院客户应用申请表.xlsx)** 
-给dev@ipsmap.com邮件联系获取AppKey、mapId、scheme（分享用）
+给dev@ipsmap.com邮件联系获取appKey、mapId、scheme（分享用）
 
 ## 使用CocoaPods部署
 在Podfile中使用命令如下：
@@ -45,6 +45,16 @@ $ pod install
   ```
   
 ## 使用说明  
+
+### SDK初始化
+  在 didFinishLaunchingWithOptions里面添加以下代码即可，appKey为邮件中获取的
+```objective-c
+    //初始化Ipsmap
+    [IpsmapServices setAppKey:appKey];
+    [[IpsmapServices sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+```
+
+
 ### 显示室内地图
 ```objective-c
     IpsMapViewController *vc = [[IpsMapViewController alloc] initWithMapId:@"lGaWCUtqoj"];
