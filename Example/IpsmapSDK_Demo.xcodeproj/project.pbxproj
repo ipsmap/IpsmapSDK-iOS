@@ -34,6 +34,7 @@
 		3FEBD3F31EEA8FCF008ED9D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEBD3F11EEA8FCF008ED9D2 /* LaunchScreen.storyboard */; };
 		3FEBD3FE1EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBD3FD1EEA8FCF008ED9D2 /* IpsmapSDK_DemoTests.m */; };
 		3FEBD4091EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBD4081EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.m */; };
+		92285E03218B1C620042C7CB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92285E01218B1C620042C7CB /* Localizable.strings */; };
 		B5CFE47F63BAB872A614D949 /* libPods-IpsmapSDK_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEC1126CAB70202EF0D16A9 /* libPods-IpsmapSDK_Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +119,7 @@
 		3FEBD4081EEA8FCF008ED9D2 /* IpsmapSDK_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IpsmapSDK_DemoUITests.m; sourceTree = "<group>"; };
 		3FEBD40A1EEA8FCF008ED9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		691C6A2A00243E6485D167EC /* Pods-IpsmapSDK_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IpsmapSDK_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-IpsmapSDK_Demo/Pods-IpsmapSDK_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		92285E02218B1C620042C7CB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = Localizable.strings; sourceTree = "<group>"; };
 		DBEC1126CAB70202EF0D16A9 /* libPods-IpsmapSDK_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IpsmapSDK_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -232,6 +234,7 @@
 		3F3AE04A207CD81200A1F36B /* IpsmapSDK */ = {
 			isa = PBXGroup;
 			children = (
+				92285E00218B1C620042C7CB /* zh-Hant.lproj */,
 				3F3AE04B207CD81200A1F36B /* IpsmapSDK.framework */,
 			);
 			name = IpsmapSDK;
@@ -306,6 +309,14 @@
 				3FEBD40A1EEA8FCF008ED9D2 /* Info.plist */,
 			);
 			path = IpsmapSDK_DemoUITests;
+			sourceTree = "<group>";
+		};
+		92285E00218B1C620042C7CB /* zh-Hant.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				92285E01218B1C620042C7CB /* Localizable.strings */,
+			);
+			path = "zh-Hant.lproj";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +436,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 3FEBD3D71EEA8FCF008ED9D2;
 			productRefGroup = 3FEBD3E11EEA8FCF008ED9D2 /* Products */;
@@ -445,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3AE042207466A500A1F36B /* Assets.xcassets in Resources */,
+				92285E03218B1C620042C7CB /* Localizable.strings in Resources */,
 				3F3AE04C207CD81200A1F36B /* IpsmapSDK.xcassets in Resources */,
 				3F3AE0402074669D00A1F36B /* LaunchScreen.storyboard in Resources */,
 			);
@@ -603,6 +616,14 @@
 				3FEBD3F21EEA8FCF008ED9D2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		92285E01218B1C620042C7CB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92285E02218B1C620042C7CB /* zh-Hant */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
