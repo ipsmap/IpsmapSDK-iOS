@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "IpsmapSDK"
-  s.version      = "1.3.0"
+  s.version      = "1.3.5"
   s.summary      = "室内导航SDK."
 
   # This description is used to generate tags and improve search results.
@@ -106,7 +106,11 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "IpsmapSDK.xcassets"
+  #s.resources = "IpsmapSDK.xcassets"
+  #s.resource_bundles = {
+  #    'IpsmapSDK' => ['IpsmapSDK.xcassets']
+  #}
+
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

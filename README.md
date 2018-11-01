@@ -5,12 +5,12 @@ IpsmapSDK-iOS 是一套基于 iOS 8.0 及以上版本的室内地图应用程序
 ## 获取AppKey
 请填写
 **[申请表](https://github.com/ipsmap/IpsmapSDK-iOS/blob/master/Readme.asset/道一循公司医院客户应用申请表.xlsx)** 
-给dev@ipsmap.com邮件联系获取AppKey、mapId、scheme（分享用）
+给dev@ipsmap.com邮件联系获取appKey、mapId、scheme（分享用）
 
 ## 使用CocoaPods部署
 在Podfile中使用命令如下：
 ```bash
-pod 'IpsmapSDK', '~> 1.3.0'
+pod 'IpsmapSDK', '~> 1.3.5'
 ```
 然后运行以下命令
 
@@ -19,7 +19,7 @@ $ pod install
 ```
 
 ## 手动集成
-1. 将SDK文件中包含的IpsmapSDK.framework、IpsmapSDK.xcassets两个文件添加到工程中。
+1. 将SDK文件中包含的IpsmapSDK.framework、~~IpsmapSDK.xcassets两个文件~~添加到工程中。
 2. 开发者需要在工程中链接上：CoreTelephony.framework、SystemConfiguration.framework、CFNetwork.framework、libz.tbd、libc++.tbd、libsqlite3.tbd。
 3. 同时需要在Embedded Binaries 中链接上IpsmapSDK.framework(动态链接库）如下图所示
 
@@ -45,6 +45,16 @@ $ pod install
   ```
   
 ## 使用说明  
+
+### SDK初始化
+  在 didFinishLaunchingWithOptions里面添加以下代码即可，appKey为邮件中获取的
+```objective-c
+    //初始化Ipsmap
+    [IpsmapServices setAppKey:appKey];
+    [[IpsmapServices sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+```
+
+
 ### 显示室内地图
 ```objective-c
     IpsMapViewController *vc = [[IpsMapViewController alloc] initWithMapId:@"lGaWCUtqoj"];
