@@ -37,6 +37,8 @@ typedef void (^ IpsOpenURLResult)(BOOL isValid, NSDictionary *params);
 @property (nonatomic, readonly)NSArray * _Nullable hospitalAry;
 //用户信息
 @property (nonatomic, strong)IpsUserInfo * _Nullable userInfo;
+//debug 模式可以请求到测试的地图资料
+@property (nonatomic, assign)BOOL       debug;
 
 + (nonnull instancetype)sharedInstance;
 
