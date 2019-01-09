@@ -56,7 +56,8 @@ typedef void (^ IpsOpenURLResult)(BOOL isValid, NSDictionary *params);
 //请求对应的医院列表
 - (void)requestPartnerHospitalList;
 
-- (NSInteger)hasPermissionWith:(nonnull NSString *)mapId;
+//放在线程中处理，防止主线程卡住
+- (BOOL)hasPermissionWith:(nonnull NSString *)mapId;
 
 + (NSString *_Nullable)SDKVersion;
 
