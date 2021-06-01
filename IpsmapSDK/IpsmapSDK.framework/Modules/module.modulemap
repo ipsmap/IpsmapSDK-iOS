@@ -1,6 +1,0 @@
-framework module IpsmapSDK {
-  umbrella header "IpsmapSDK.h"
-
-  export *
-  module * { export * }
-}
