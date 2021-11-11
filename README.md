@@ -7,6 +7,12 @@ IpsmapSDK-iOS 是一套基于 iOS 8.0 及以上版本的室内地图应用程序
 **[申请表](https://github.com/ipsmap/IpsmapSDK-iOS/blob/master/Readme.asset/道一循公司医院客户应用申请表.xlsx)** 
 给office@ipsmap.com邮件联系获取appKey、mapId、scheme（分享用）
 
+```
+道一循室内导航SDK隐私保护指引 隐私声明在线地址：https://www.ipsmap.com/ipsmap-privacy.html
+道一循室内导航SDK软件许可及服务协议  软件许可在线地址： https://www.ipsmap.com/ipsmap-protection.html
+
+```
+
 
 ## 获取最新的 SDK
 
